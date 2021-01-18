@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+    <div>
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+      <button id="reset-zoom">Reset</button>
+    </div>
+    <div>
+      <button id="close-app">Close App</button>
+      <button id="send-message">Send Message</button>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
